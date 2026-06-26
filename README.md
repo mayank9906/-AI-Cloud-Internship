@@ -67,7 +67,8 @@ Find:
 2.  Average
 3.  Better in which conditions
 4.  Frequent dismissals
-___________________________________________________________________________________________________________________________________________________________________Assignment 7 : IPL Dataset Analysis
+___________________________________________________________________________________________________________________________________________________________________
+Assignment 7 : IPL Dataset Analysis
 Create an IPL Players Dataset from scratch upload up to 100 players information
 randomly in CSV format.
 Task
