@@ -41,39 +41,39 @@ Write Python programs for:
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 4: API Data Fetcher
 Task
-● Use any programming language (Python/Node.js).
-● Fetch data from:
-○ JSONPlaceholder API
-○ Weather API
-● Display results in console.
+1. Use any programming language (Python/Node.js).
+2. Fetch data from:
+   a. JSONPlaceholder API
+   b. Weather API
+3.  Display results in console.
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 5:Data Processing Fundamentals
 Dataset:
-● Student Dataset
-● Cricket Dataset
-● Any Open Dataset
+1. Student Dataset
+2.  Cricket Dataset
+3.  Any Open Dataset
 Perform:
-● Read CSV
-● Remove Null Values
-● Count Records
-● Generate Summary Statistics
+1.  Read CSV
+2.  Remove Null Values
+3.  Count Records
+4.  Generate Summary Statistics
 ___________________________________________________________________________________________________________________________________________________________________
  Assignment 6: Cricket Stats Calculator
 Use data from external resources and create the individual player stats. The
 information can be seen using the json file.
 Task
 Find:
-● Strike rate
-● Average
-● Better in which conditions
-● Frequent dismissals
+1.  Strike rate
+2.  Average
+3.  Better in which conditions
+4.  Frequent dismissals
 ___________________________________________________________________________________________________________________________________________________________________Assignment 7 : IPL Dataset Analysis
 Create an IPL Players Dataset from scratch upload up to 100 players information
 randomly in CSV format.
 Task
 Using CSV file:
 Find:
-● Highest Run Scorer
-● Most Wickets
-● Best Strike Rate
-● Team with Most Wins
+1.  Highest Run Scorer
+2.  Most Wickets
+3.  Best Strike Rate
+4.  Team with Most Wins
