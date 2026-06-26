@@ -15,7 +15,7 @@ Assignment 1 : Research Document covering :
 12. Git and Version Control
 13. Real-world AI & Cloud Use Cases
 14. Career Paths and Industry Applications
-    
+____________________________________________________________________________________________________________________________________________________________________  
 Assignment 2: Research on Artificial Intelligence
 covering:
 1. What is Artificial Intelligence?
