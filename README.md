@@ -16,3 +16,9 @@ Assignment 1 : Research Document covering :
 13. Real-world AI & Cloud Use Cases
 14. Career Paths and Industry Applications
     
+Assignment 2: Research on Artificial Intelligence
+covering:
+1. What is Artificial Intelligence?
+2. Types of AI
+3. AI vs Machine Learning vs Deep Learning
+4. Real-world AI applications
