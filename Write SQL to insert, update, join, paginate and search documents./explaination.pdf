@@ -1,0 +1,88 @@
+SQL Operations on Documents and Chunks Database
+Objective
+
+The objective of this assignment is to perform common SQL operations on the documents and chunks tables. These operations demonstrate how relational databases are used to store, modify, retrieve, and search data efficiently.
+
+Database Overview
+
+The database contains two tables:
+
+documents
+chunks
+
+The documents table stores metadata of uploaded files, while the chunks table stores smaller sections of text extracted from each document. These tables are connected using a Primary Key and Foreign Key relationship.
+
+SQL Operations Performed
+1. INSERT
+
+The INSERT statement is used to add new records into the database.
+
+In this assignment, multiple document records and their corresponding chunks were inserted into the database. This provides sample data for performing further SQL operations.
+
+Purpose
+
+Adds new information into the database.
+Creates records that can be searched, updated, and joined.
+2. UPDATE
+
+The UPDATE statement modifies existing records in a table.
+
+In this assignment, the filename of an existing document was updated using its unique document ID.
+
+Purpose
+
+Corrects existing data.
+Updates information without deleting the record.
+3. INNER JOIN
+
+The INNER JOIN operation combines data from both the documents and chunks tables using the document_id field.
+
+This query displays the document information along with its corresponding text chunks.
+
+Purpose
+
+Retrieves related information from multiple tables.
+Eliminates duplicate storage while maintaining relationships.
+4. Pagination
+
+Pagination is performed using the LIMIT and OFFSET clauses.
+
+Instead of displaying all records at once, the database returns only a limited number of records per page.
+
+Example:
+
+Page 1 → LIMIT 5 OFFSET 0
+Page 2 → LIMIT 5 OFFSET 5
+
+Purpose
+
+Improves query performance.
+Makes large datasets easier to display and manage.
+Commonly used in web applications.
+5. Search
+
+The WHERE clause together with the LIKE operator is used to search specific records.
+
+Examples include searching documents by:
+
+Filename
+File type
+Chunk content
+
+Purpose
+
+Quickly locates required records.
+Supports document retrieval and filtering.
+Advantages
+Efficient storage of document information.
+Easy retrieval using SQL queries.
+Supports relationships between tables.
+Demonstrates CRUD-related database operations.
+Provides a scalable design for document management systems.
+Real-World Application
+
+These SQL operations are commonly used in document management systems, hospital management systems, banking applications, content management systems, and AI-based document processing platforms such as LegalAI. By combining insert, update, join, pagination, and search operations, databases can efficiently manage large volumes of structured information.
+
+Conclusion
+
+This assignment demonstrated the implementation of essential SQL operations on a relational database. The use of INSERT, UPDATE, INNER JOIN, PAGINATION, and SEARCH enables efficient data management while maintaining consistency through Primary Key and Foreign Key relationships. These concepts form the foundation of modern database-driven applications and are widely used in real-world software development.
