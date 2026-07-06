@@ -1,0 +1,107 @@
+Database Design Document
+Project Title
+
+Design of Documents and Chunks Tables with Primary Key and Foreign Key Relationships
+
+Objective
+
+The objective of this database design is to efficiently store uploaded documents and divide them into smaller text chunks for further processing. This design supports document management systems and AI-based applications by maintaining a structured relationship between documents and their extracted content.
+
+Database Overview
+
+The database consists of two tables:
+
+documents
+chunks
+
+The relationship between these tables is One-to-Many, where one document can contain multiple chunks of text.
+
+Documents Table
+
+The documents table stores the metadata of every uploaded document.
+
+Attributes
+Column	Description
+document_id	Unique identifier for each document (Primary Key).
+filename	Name of the uploaded document.
+filepath	Location where the document is stored.
+filetype	Type of uploaded file (PDF, DOCX, etc.).
+upload_time	Date and time when the document was uploaded.
+Purpose
+
+This table maintains all the important information related to uploaded files without storing the document content inside the database.
+
+Chunks Table
+
+The chunks table stores smaller sections of text extracted from each uploaded document.
+
+Attributes
+Column	Description
+chunk_id	Unique identifier for each chunk (Primary Key).
+document_id	References the document to which the chunk belongs (Foreign Key).
+chunk_text	The extracted text stored in the chunk.
+chunk_number	Sequence number of the chunk inside the document.
+Purpose
+
+Large documents are divided into smaller chunks to improve processing speed, searching, indexing, and AI-based retrieval systems.
+
+Primary Key
+
+A Primary Key (PK) uniquely identifies every record in a table.
+
+In this database:
+
+document_id is the Primary Key of the documents table.
+chunk_id is the Primary Key of the chunks table.
+
+Primary keys ensure that every record is unique.
+
+Foreign Key
+
+A Foreign Key (FK) creates a relationship between two tables.
+
+In this design:
+
+document_id in the chunks table is a Foreign Key.
+It references document_id in the documents table.
+
+This ensures that every chunk is always associated with an existing document.
+
+Relationship
+
+The database follows a One-to-Many (1:N) relationship.
+
+One Document → Many Chunks
+
+Example:
+
+EmploymentContract.pdf
+
+↓
+
+Chunk 1
+
+↓
+
+Chunk 2
+
+↓
+
+Chunk 3
+
+↓
+
+Chunk 4
+
+This allows large documents to be processed efficiently while maintaining a clear connection between the original document and its extracted chunks.
+
+Benefits of the Design
+Efficient storage of document metadata.
+Supports large document processing.
+Prevents duplicate records through Primary Keys.
+Maintains data integrity using Foreign Keys.
+Easily scalable for document search and AI applications.
+Suitable for Retrieval-Augmented Generation (RAG), document indexing, and LegalAI systems.
+Conclusion
+
+The designed database provides a structured and scalable approach for storing uploaded documents and their corresponding text chunks. By using Primary Key and Foreign Key relationships, the database maintains consistency, avoids data redundancy, and supports future AI-based document processing and retrieval applications.
