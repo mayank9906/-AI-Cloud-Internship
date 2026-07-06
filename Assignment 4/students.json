@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Mayank Makhija",
+        "course": "BCA",
+        "semester": 6,
+        "city": "Pune"
+    },
+    {
+        "id": 2,
+        "name": "Rahul Sharma",
+        "course": "BCA",
+        "semester": 5,
+        "city": "Mumbai"
+    },
+    {
+        "id": 3,
+        "name": "Priya Singh",
+        "course": "BBA",
+        "semester": 4,
+        "city": "Delhi"
+    }
+]
