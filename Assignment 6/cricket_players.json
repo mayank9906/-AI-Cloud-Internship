@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Virat Kohli",
+        "runs": 765,
+        "balls": 600,
+        "innings": 15,
+        "outs": 12,
+        "conditions": "Chasing",
+        "dismissals": [
+            "Caught",
+            "Caught",
+            "LBW",
+            "Caught",
+            "Bowled",
+            "Caught",
+            "Caught",
+            "Run Out",
+            "Caught",
+            "LBW",
+            "Caught",
+            "Caught"
+        ]
+    },
+    {
+        "name": "Rohit Sharma",
+        "runs": 650,
+        "balls": 500,
+        "innings": 14,
+        "outs": 13,
+        "conditions": "Batting First",
+        "dismissals": [
+            "Caught",
+            "Bowled",
+            "Caught",
+            "Caught",
+            "Caught",
+            "LBW",
+            "Bowled",
+            "Caught",
+            "Caught",
+            "Caught",
+            "Run Out",
+            "Caught",
+            "LBW"
+        ]
+    }
+]
