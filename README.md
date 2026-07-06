@@ -83,53 +83,53 @@ Assigment 8 : Build a FastAPI service with GET /health and POST /echo endpoints.
 Build a FastAPI service with basic API endpoints.
 Task
 Create the following endpoints:
-1.Health Check Endpoint
-2.Echo Endpoint
-3.Request Logging
-4.Exception Handling
+1.  Health Check Endpoint
+2.  Echo Endpoint
+3.  Request Logging
+4.  Exception Handling
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 9 : Implement file upload API to accept PDF/DOCX and store locally with metadata in PostgreSQL.
 Create a File Upload API to manage document uploads.
 Task
 Implement the following:
-1.File Upload
-2.File Type Validation
-3.Local File Storage
-4.Metadata Storage
+1.  File Upload
+2.  File Type Validation
+3.  Local File Storage
+4.  Metadata Storage
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 10 : Create background task to process uploaded files asynchronously.
 Create a background file processing service.
 Task
 Implement the following:
-1.File Upload
-2.Background Processing
-3.File Processing Status
-4.Processed File Management
+1.  File Upload
+2.  Background Processing
+3.  File Processing Status
+4.  Processed File Management
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 11 : Containerize the API using Docker and environment variables.
 Containerize an API for portable deployment.
 Task
 Implement the following:
-1.Docker Configuration
-2.Environment Variables
-3.Image Creation
-4.Container Execution
+1.  Docker Configuration
+2.  Environment Variables
+3.  Image Creation
+4.  Container Execution
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 12 : Design Document and Chunk tables with PK/FK relationships.
 Design a database schema for document management.
 Task
 Implement the following:
-1.Documents Table
-2.Chunks Table
-3.Primary Key Relationships
-4.Foreign Key Relationships
+1.  Documents Table
+2.  Chunks Table
+3.  Primary Key Relationships
+4.  Foreign Key Relationships
 ___________________________________________________________________________________________________________________________________________________________________
 Assignment 13 : Write SQL to insert, update, join, paginate and search documents.
 Perform SQL operations on the documents database.
 Task
 Implement the following:
-1.Insert Records
-2.Update Records
-3.Join Tables
-4.Pagination
-5.Search Documents
+1.  Insert Records
+2.  Update Records
+3.  Join Tables
+4.  Pagination
+5.  Search Documents
