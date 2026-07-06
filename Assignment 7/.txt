@@ -1,0 +1,23 @@
+IPL DATA ANALYSIS REPORT
+
+Dataset Size : 100 Players
+
+Highest Run Scorer
+Virat Kohli
+Runs : 741
+
+Most Wickets
+Jasprit Bumrah
+Wickets : 24
+
+Best Strike Rate
+Andre Russell
+Strike Rate : 185.4
+
+Team with Most Wins
+Mumbai Indians
+Wins : 12
+
+Conclusion
+
+The dataset was analysed using Python and Pandas. Statistical analysis identified the top run scorer, highest wicket taker, best strike rate and the team with the maximum number of wins.

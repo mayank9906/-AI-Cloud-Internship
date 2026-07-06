@@ -1,0 +1,29 @@
+# IPL Dataset Analysis
+
+## Objective
+
+The objective of this assignment is to analyse an IPL player dataset using Python and Pandas.
+
+## Technologies Used
+
+- Python
+- Pandas
+- CSV
+
+## Dataset
+
+Custom IPL Players Dataset containing 100 player records.
+
+## Analysis Performed
+
+- Highest Run Scorer
+- Most Wickets
+- Best Strike Rate
+- Team with Most Wins
+
+## Concepts Used
+
+- CSV Processing
+- Data Analysis
+- Pandas
+- Aggregate Functions
