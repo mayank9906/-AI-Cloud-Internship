@@ -1,0 +1,55 @@
+Vector Embeddings using Qdrant
+Objective
+
+The objective of this assignment is to generate vector embeddings from text chunks and store them in a Vector Database (Qdrant). This enables semantic search by representing textual information as numerical vectors instead of plain text.
+
+Introduction
+
+Traditional databases store structured data such as text, numbers, and dates. However, AI applications require storing the semantic meaning of text rather than only the original words.
+
+An embedding model converts each text chunk into a numerical vector. These vectors capture the meaning of the text and are stored in a Vector Database for efficient similarity search.
+
+Dataset
+
+The assignment uses a text file containing 20 individual text chunks.
+
+Each line in the file represents one chunk of text that is converted into a vector embedding.
+
+Embedding Generation
+
+The Sentence Transformer model all-MiniLM-L6-v2 is used to convert every text chunk into a vector representation.
+
+Each generated embedding contains 384 numerical values, representing the semantic features of the text.
+
+These vectors are generated automatically by the embedding model.
+
+Vector Database
+
+Qdrant is used as the Vector Database.
+
+A collection named legal_chunks is created to store all generated embeddings.
+
+Each stored record contains:
+
+Unique ID
+Vector Embedding
+Original Text (Payload)
+
+The payload preserves the original text while the vector enables semantic searching.
+
+Workflow
+
+The complete workflow consists of the following steps:
+
+Read text chunks.
+Generate embeddings using Sentence Transformers.
+Connect to the Qdrant server.
+Create a collection.
+Store vectors with their payload.
+Verify successful storage using the Qdrant Dashboard.
+Benefits
+Enables semantic search.
+Supports AI-based document retrieval.
+Stores the meaning of text instead of exact keywords.
+Efficient retrieval of similar documents.
+Suitable for Retrieval-Augmented Generation (RAG) systems.
