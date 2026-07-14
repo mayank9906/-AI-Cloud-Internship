@@ -1,0 +1,65 @@
+Index Performance Analysis
+Objective
+
+The objective of this assignment is to understand how database indexes improve query performance in PostgreSQL. The assignment compares query execution before and after creating an index using the EXPLAIN ANALYZE command.
+
+Introduction
+
+As databases grow larger, searching for specific records becomes slower if every row has to be scanned. Database indexes provide a faster way to locate records by creating a separate data structure that allows PostgreSQL to find matching data efficiently.
+
+In this assignment, an index is created on the filename column of the documents table, and the execution plans are compared before and after indexing.
+
+Table Used
+
+The assignment uses a documents table containing information about uploaded files.
+
+The table includes the following columns:
+
+document_id
+filename
+filepath
+filetype
+upload_time
+
+The filename column is selected for indexing because it is commonly used in search queries.
+
+Before Creating the Index
+
+Initially, the query searches for a document using its filename without any index.
+
+Example query:
+
+SELECT * FROM documents
+WHERE filename = 'Contract.pdf';
+
+The execution plan is analyzed using EXPLAIN ANALYZE.
+
+Since no index exists, PostgreSQL searches through the table sequentially. This process is known as a Sequential Scan, where every row is checked until the required record is found.
+
+Although this approach works for small datasets, it becomes slower as the amount of data increases.
+
+Creating the Index
+
+An index is created on the filename column using the following SQL statement:
+
+CREATE INDEX idx_filename
+ON documents(filename);
+
+The index stores references to the filename values, allowing PostgreSQL to locate matching records more efficiently.
+
+After Creating the Index
+
+The same query is executed again using EXPLAIN ANALYZE.
+
+PostgreSQL now evaluates whether using the index is more efficient than scanning the entire table.
+
+For larger datasets, the database generally performs an Index Scan, reducing the number of rows that need to be examined and improving query performance.
+
+For very small tables, PostgreSQL may still choose a Sequential Scan because reading the entire table can be faster than using the index. This behavior is normal and is determined by PostgreSQL's query optimizer.
+
+Benefits of Indexing
+Improves search performance.
+Reduces query execution time.
+Increases efficiency for frequently searched columns.
+Enhances database performance for large datasets.
+Optimizes data retrieval operations.
