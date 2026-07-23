@@ -1,0 +1,40 @@
+Cosine Similarity Search using Qdrant
+Introduction
+
+This project demonstrates how semantic search works using vector embeddings and the Qdrant Vector Database. Instead of searching using exact keywords, the system compares vector representations of text to retrieve the most relevant information.
+
+Working
+
+The application first reads all text chunks from a text file.
+
+Each chunk is converted into a numerical vector using the SentenceTransformer embedding model.
+
+These vectors are stored inside a Qdrant collection.
+
+When a user enters a query:
+
+The query is converted into a vector.
+Qdrant compares the query vector with all stored vectors using cosine similarity.
+The Top-5 most similar vectors are retrieved.
+The original text associated with those vectors is displayed.
+Components Used
+Python
+SentenceTransformer
+Qdrant
+Docker
+Cosine Similarity
+Applications
+AI Chatbots
+Legal AI
+Document Search
+Medical Search Systems
+Enterprise Knowledge Bases
+Retrieval-Augmented Generation (RAG)
+Learning Outcome
+
+Through this project, I learned:
+
+How embeddings represent text.
+How vector databases store embeddings.
+How cosine similarity performs semantic search.
+How retrieved chunks form the retrieval stage of a RAG system.
